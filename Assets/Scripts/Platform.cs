@@ -5,6 +5,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     [SerializeField] private int _cnt;
+    [SerializeField] private GameManager _gameManager;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class Platform : MonoBehaviour
         if (_cnt == 0)
         {
             Debug.Log("Win!");
+            _gameManager.Win();
         }
     }
 }

@@ -9,7 +9,6 @@ public class Screw : MonoBehaviour
     {
         _startPos = transform.position;
     }
-
     public void Move(Vector3 position)
     {
         transform.position = position;
@@ -36,9 +35,6 @@ public class Screw : MonoBehaviour
         }
     }
 
-    public static void DestroyScrew()
-    {
-    }
     private void MoveScrew(bool _screwStatus)
     {
         if (_screwStatus)
